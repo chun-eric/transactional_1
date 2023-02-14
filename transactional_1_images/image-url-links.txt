@@ -1,0 +1,18 @@
+// shoes
+
+<img src="https://i.ibb.co/5TfbFc2/resized-shoes-3.jpg" alt="resized-shoes-3" border="0">
+<img src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" alt="resized-shoes-1" border="0">
+<img src="https://i.ibb.co/SccLJLx/resized-shoes-2.jpg" alt="resized-shoes-2" border="0">
+
+// logo
+
+<img src="https://i.ibb.co/JjSwJn1/shoe-maven-logo.png" alt="shoe-maven-logo" border="0">
+
+
+// icons
+
+<img src="https://i.ibb.co/YTRRPcK/black-youtube.png" alt="black-youtube" border="0">
+<img src="https://i.ibb.co/K2rR5fK/black-facebook.png" alt="black-facebook" border="0">
+<img src="https://i.ibb.co/PWvzh2B/black-instagram.png" alt="black-instagram" border="0">
+<img src="https://i.ibb.co/Y2mK5YK/black-linkedin.png" alt="black-linkedin" border="0">
+<img src="https://i.ibb.co/VC4myws/black-twitter.png" alt="black-twitter" border="0">
