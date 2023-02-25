@@ -94,26 +94,106 @@
     }
 
     @media screen and (max-width: 599.98px) {
-      .two-columns .padding {
-        padding-right: 0 !important;
-        padding-left: 0 !important;
+        .two-columns .padding {
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-column .text {
+          align-items: left !important;
+          text-align: left !important;
+        }
+
+
+        .full-width {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+     
       }
 
-      .two-columns .content img {
-        width: 300px !important;
-        max-width: 300px !important;
+      .full-block {
+        display: block !important;
+        text-align: center !important; 
+       
       }
-    }
+
+      .table-width {
+        width: 68% !important;
+      }
+      
+      .table-width-two {
+        width: 78% !important;
+      }
+
+      .none {
+        display: none !important;
+      }
+
+      img.content {
+        border: 0px !important;
+        padding-top: 10px !important;
+        width: 360px !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
+      }
+
+    
+
+ 
+
+
+      }
 
     @media screen and (max-width: 399.98px) {
       .two-columns .padding {
-        padding-right: 0 !important;
-        padding-left: 0 !important;
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+        }
+
+        .one-column .text {
+          align-items: left !important;
+          text-align: left !important;
+        }
+
+
+        .full-width {
+        padding-top: 4px !important;
+        padding-bottom: 4px !important;
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+        height: 100% !important;
+     
       }
 
-      .two-columns .content img {
-        width: 300px !important;
-        max-width: 300px !important;
+      .full-block {
+        display: block !important;
+        text-align: center !important; 
+       
+      }
+
+      .table-width {
+        width: 68% !important;
+      }
+      
+      .table-width-two {
+        width: 78% !important;
+      }
+
+      .none {
+        display: none !important;
+      }
+
+      img.content {
+        border: 0px !important;
+        padding-top: 10px !important;
+        width: 360px !important;
+        max-width: 360px !important;
+        margin: 0 auto !important;
       }
     }
 
@@ -265,7 +345,7 @@
       <!-- START OF ORDER SUMMARY TITLE-->
       <tr>
         <td align="center" style="padding-top: 35px">
-          <table align="center" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
+          <table align="center" border="0" cellspacing="0" cellpadding="0" width="90%" role="presentation">
             <tbody>
               <tr>
                 <td align="center">
@@ -275,7 +355,7 @@
                         color: #000000;
                         letter-spacing: 2px;
                         font-size: 20px;
-                        margin: 0;
+                        Margin: 0;
                         padding-bottom: 5px;
                         line-height: 22px;
                       ">
@@ -284,8 +364,15 @@
                 </td>
               </tr>
               <tr>
-                <td align="center " style="padding-top: 5px">
-                  <hr width="90%" style="color: #000000; border-top: 2px solid black" />
+                <td style="padding-top: 10px">
+                  <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%" class="table-width-two">
+                    <tbody >
+                      <tr>
+                        <td height="2" style="background-color: #000000;">
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </td>
               </tr>
             </tbody>
@@ -296,22 +383,22 @@
 
       <!-- START OF ORDER SUMMARY DETAILS -->
       <tr>
-        <td align="center" style="padding-top: 10px">
+        <td align="center" style="padding-top: 15px">
           <table class="responsive-table" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"
             width="540px">
             <tbody>
               <tr>
-                <td width="260" class="dw db">
+                <td width="260" class="full-width full-block">
                   <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%">
                     <tbody>
                       <tr>
-                        <td align="left" class="dw db">
+                        <td align="left" class="full-width full-block">
                           <h2 style="
                                 margin: 0;
                                 color: #1b1715;
                                 font-family: Arial, sans-serif, Helvetica;
                                 font-size: 14px;
-                                font-weight: bold;
+                                font-weight: 800;
                                 line-height: 28px;
                                 text-transform: uppercase;
                                 letter-spacing: 2px;
@@ -321,7 +408,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" class="dw db">
+                        <td align="left" class="full-width full-block">
                           <p style="
                                 margin: 0;
                                 color: #1b1715;
@@ -353,12 +440,12 @@
                     </tbody>
                   </table>
                 </td>
-                <td widht="20" height="20">&nbsp;</td>
-                <td width="260" class="dw db">
+                <td class="full-width full-block" width="20" height="20">&nbsp;</td>
+                <td width="260" class="full-width full-block">
                   <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%">
                     <tbody>
                       <tr>
-                        <td align="right" class="dw db">
+                        <td align="right" class="full-width full-block">
                           <p style="
                                 margin: 0;
                                 color: #1b1715;
@@ -366,15 +453,16 @@
                                 font-size: 14px;
                                 line-height: 24px;
                                 text-transform: uppercase;
-                                font-weight: bold;
+                                font-weight: 800;
                                 letter-spacing: 2px;
                               ">
                             Billing Address
                           </p>
                         </td>
                       </tr>
+
                       <tr>
-                        <td align="right">
+                        <td align="right"  class="full-width full-block">
                           <p style="
                                 margin: 0;
                                 color: #1b1715;
@@ -403,6 +491,7 @@
                           </p>
                         </td>
                       </tr>
+
                     </tbody>
                   </table>
                 </td>
@@ -425,7 +514,7 @@
                         font-size: 16px;
                         text-transform: uppercase;
                         letter-spacing: 2px;
-                        font-weight: bold;
+                        font-weight: 800;
                         font-family: Arial, sans-serif, Helvetica;
                         line-height: 28px;
                         color: #000000;
@@ -433,7 +522,8 @@
                     Payment Method
                   </h2>
                   <p style="
-                        font-size: 14px;
+                        font-size: 18px;
+                        letter-spacing: 2px;
                         font-weight: normal;
                         font-family: Arial, sans-serif, Helvetica;
                         line-height: 20px;
@@ -452,7 +542,7 @@
       <!-- START OF ORDER ITEMS TITLE -->
       <tr>
         <td align="center" style="padding-top: 20px">
-          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%">
+          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%">
             <tbody>
               <tr>
                 <td align="center" style="padding-top: 10px">
@@ -469,12 +559,11 @@
                 </td>
               </tr>
               <tr>
-                <td align="center" style="padding-top: 10px">
-                  <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="100%">
-                    <tbody>
+                <td style="padding-top: 10px">
+                  <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%" class="table-width-two">
+                    <tbody >
                       <tr>
-                        <td align="center" height="2">
-                          <hr width="90%" style="margin: 0; border-top: 2px solid black" />
+                        <td height="2" style="background-color: #000000;">
                         </td>
                       </tr>
                     </tbody>
@@ -493,25 +582,25 @@
           <table align="center" role="presentation" cellpadding="0" cellspacing="0" width="540" border="0">
             <tbody>
               <tr>
-                <td width="220" height="90" class="db dw">
+                <td width="220" height="90" class="full-block full-width">
                   <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
                     height="100%">
                     <tbody>
                       <tr>
-                        <td align="left" class="dw db">
-                          <img src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" alt="resized-shoes-1" border="0" width="100%"
+                        <td align="left" class="full-block full-width">
+                          <img class="content" src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" alt="resized-shoes-1" border="0" width="100%"
                             height="100%" style="display: block; border: none" />
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
-                <td width="20" height="20" class="dw db">&nbsp;</td>
-                <td width="250" class="db dw">
+                <td width="20" height="20" class="full-block full-width">&nbsp;</td>
+                <td width="250" class="full-block full-width">
                   <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                     <tbody>
                       <tr>
-                        <td align="left" class="dw db">
+                        <td align="left" class="full-block full-width">
                           <h2 style="
                                 margin: 0;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -527,7 +616,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" class="dw db" style="padding-top: 10px">
+                        <td align="left" class="full-block full-width" style="padding-top: 10px">
                           <p style="
                                 margin: 0;
                                 font-family: Arial, sans-serif, Helvetica;
@@ -566,13 +655,12 @@
 
       <!-- START OF BORDER BREAK -->
       <tr>
-        <td align="center" style="padding-top: 10px">
-          <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="90%">
-
-
-            <tbody>
+        <td style="padding-top: 10px">
+          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%" class="table-width">
+            <tbody >
               <tr>
-                <td align="center" height="2" style="background-color: #000000"></td>
+                <td height="2" style="background-color: #000000;">
+                </td>
               </tr>
             </tbody>
           </table>
@@ -586,25 +674,27 @@
           <table align="center" role="presentation" cellpadding="0" cellspacing="0" width="540" border="0">
             <tbody>
               <tr>
-                <td width="220" height="90" class="db dw">
+                <td width="220" height="90" class="full-block full-width">
                   <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
                     height="100%">
                     <tbody>
                       <tr>
-                        <td align="left" class="dw db">
-                          <img src="https://i.ibb.co/SccLJLx/resized-shoes-2.jpg" alt="resized-shoes-2" border="0" width="100%"
+                        <td align="left" class="full-block full-width">
+                          <img class="content" src="https://i.ibb.co/SccLJLx/resized-shoes-2.jpg" alt="resized-shoes-2" border="0" width="100%"
                             height="100%" style="display: block; border: none" />
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
-                <td width="20" height="20" class="dw db">&nbsp;</td>
-                <td width="250" class="db dw">
+
+                <td width="20" height="20" class="full-block full-width">&nbsp;</td>
+
+                <td width="250" class="full-block full-width">
                   <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                     <tbody>
                       <tr>
-                        <td align="left" class="dw db">
+                        <td align="left" class="full-block full-width">
                           <h2 style="
                                 margin: 0;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -620,7 +710,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" class="dw db" style="padding-top: 10px">
+                        <td align="left" class="full-block full-width" style="padding-top: 10px">
                           <p style="
                                 margin: 0;
                                 font-family: Arial, sans-serif, Helvetica;
@@ -659,13 +749,12 @@
 
       <!-- START OF BORDER BREAK -->
       <tr>
-        <td align="center" style="padding-top: 10px">
-          <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="90%">
-
-
-            <tbody>
+        <td style="padding-top: 10px">
+          <table class="table-width" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%">
+            <tbody >
               <tr>
-                <td align="center" height="2" style="background-color: #000000"></td>
+                <td height="2" style="background-color: #000000;">
+                </td>
               </tr>
             </tbody>
           </table>
@@ -679,25 +768,25 @@
           <table align="center" role="presentation" cellpadding="0" cellspacing="0" width="540" border="0">
             <tbody>
               <tr>
-                <td width="220" height="90" class="db dw">
+                <td width="220" height="90" class="full-block full-width">
                   <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
                     height="100%">
                     <tbody>
                       <tr>
-                        <td align="left" class="dw db">
-                          <img src="https://i.ibb.co/5TfbFc2/resized-shoes-3.jpg" alt="resized-shoes-3" border="0" width="100%"
+                        <td align="left" class="full-block full-width">
+                          <img class="content" src="https://i.ibb.co/5TfbFc2/resized-shoes-3.jpg" alt="resized-shoes-3" border="0" width="100%"
                             height="100%" style="display: block; border: none" />
                         </td>
                       </tr>
                     </tbody>
                   </table>
                 </td>
-                <td width="20" height="20" class="dw db">&nbsp;</td>
-                <td width="250" class="db dw">
+                <td width="20" height="20" class="full-block full-width">&nbsp;</td>
+                <td width="250" class="full-block full-width">
                   <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                     <tbody>
                       <tr>
-                        <td align="left" class="dw db">
+                        <td align="left" class="full-block full-width">
                           <h2 style="
                                 margin: 0;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -713,7 +802,7 @@
                         </td>
                       </tr>
                       <tr>
-                        <td align="left" class="dw db" style="padding-top: 10px">
+                        <td align="left" class="full-block full-width" style="padding-top: 10px">
                           <p style="
                                 margin: 0;
                                 font-family: Arial, sans-serif, Helvetica;
@@ -752,13 +841,12 @@
 
       <!-- START OF BORDER BREAK -->
       <tr>
-        <td align="center" style="padding-top: 10px">
-          <table align="center" role="presentation" border="0" cellspacing="0" cellpadding="0" width="90%">
-
-
-            <tbody>
+        <td style="padding-top: 10px">
+          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"  width="90%">
+            <tbody >
               <tr>
-                <td align="center" height="2" style="background-color: #000000"></td>
+                <td height="2" style="background-color: #000000;">
+                </td>
               </tr>
             </tbody>
           </table>
@@ -769,41 +857,41 @@
       <!-- START OF TRANSACTION COST -->
       <tr>
         <td align="center" style="padding-top: 10px">
-          <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="90%">
+          <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0"  width="90%">
             <tbody>
               <tr>
                 <td align="left" width="70%">
                   <p
-                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding: 10px 0px 0px 10px; color:#000000">
+                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding-top: 10px; padding-left:10px; color:#000000">
                     Subtotal</p>
                 </td>
                 <td align="right" width="30%">
                   <p
-                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding: 10px 10px 0px 0px; color:#000000">
+                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding-top: 10px; padding-right: 10px; color:#000000">
                     $230.00</p>
                 </td>
               </tr>
               <tr>
                 <td align="left" width="70%">
                   <p
-                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding: 10px 0px 0px 10px; color:#000000">
+                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding-top: 10px; padding-left:10px; color:#000000">
                     Shipping Cost</p>
                 </td>
                 <td align="right" width="30%">
                   <p
-                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding: 10px 10px 0px 0px; color:#000000">
+                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding-top: 10px; padding-right:10px; color:#000000">
                     $15.00</p>
                 </td>
               </tr>
               <tr>
                 <td align="left" width="70%">
                   <p
-                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding: 10px 0px 0px 10px; color:#000000">
+                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding-top: 10px; padding-left:10px; color:#000000">
                     Sales Tax (10%)</p>
                 </td>
                 <td align="right" width="30%">
                   <p
-                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding: 10px 10px 0px 0px; color:#000000">
+                    style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 22px;padding-top: 10px; padding-right:10px; color:#000000">
                     $23.00</p>
                 </td>
               </tr>
@@ -815,11 +903,12 @@
 
       <!-- START OF BORDER BREAK -->
       <tr>
-        <td align="center" style="padding-top: 20px">
-          <table align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="90%">
-            <tbody>
+        <td style="padding-top: 10px">
+          <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%">
+            <tbody >
               <tr>
-                <td height="2" style="background-color: #000000"></td>
+                <td height="2" style="background-color: #000000;">
+                </td>
               </tr>
             </tbody>
           </table>
