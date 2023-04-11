@@ -1,0 +1,355 @@
+------ MSO Conditionals Snippets -----
+
+
+// Standard MSO Code Snippet Template
+
+ <!--[if (gte mso 9) | (IE)]>
+  
+  <![endif]-->
+
+
+
+
+// Before the head and after the main style target
+
+ <!--[if (gte mso 9 | (IE))]>
+    <style type ="text/css"
+      table { border-collapse: collapse !important;}
+  </style>
+  <![endif]-->
+
+
+
+
+// Dark Mode Code Snippet
+
+   :root {
+         color-scheme: light dark;
+         supported-color-schemes: light dark;
+      }
+
+
+// Dark Mode media queries to target Apple and iOS*/
+    @media (prefers-color-scheme: dark) {
+
+      /* Custom Dark Mode Background Color */
+      body, center, table {
+        background: #272623 !important;
+        color: #ffffff!important;
+      } 
+
+     /* Custom Dark Mode Font Colors */ 
+    /* h1, h2, span, a, p {
+      color: #ffffff !important; */
+     }
+    }
+
+//  Dark Mode media queries to target some Android and Outlook.com */
+    [data-ogsc] {
+
+    }
+
+
+  
+
+// After the main body MSO Conditionals fallback
+
+   <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+         body {background-color:#ffffff!important;}
+         body, table, td, p, a {font-family: sans-serif, Arial, Helvetica!important;}
+      </style>
+   <![endif]-->
+
+     
+
+
+
+
+
+// Preheader (remove Comment before testing)
+
+  <div style="font-size:0px; color: #ffffff; line-height: 1px; mso-line-height-rule: exactly; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all">
+    (Enter your Preheader message here.)
+   </div>
+
+
+
+
+
+// Main Table MSO Conditional
+
+<!--[if (gte mso 9) | (IE)]>
+  <table width="600" align="center" style="border-spacing:0; color:#565656;"
+   role="presentation">
+   <tr>
+   <td style="padding: 0;">
+ <![endif]-->
+
+
+        <table>
+
+        </table>
+
+
+  <!--[if (gte mso 9) | (IE)]>
+    </td>
+    </tr>
+    </table>
+  <![endif]-->
+
+
+
+// MSO for Images with Text on top
+
+<tr>
+  <td>
+  
+  <!--[if (gte mso 9) | (IE)]>
+    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600px; height:332px;">
+      <v:fill type="tile" src="insert your placeholder url here" />
+      <v:textbox inset="0,0,0,0">
+      </v:textbox>
+    </v:rect>
+  <![endif]-->
+
+            <table>
+            
+            
+            
+            </table>
+
+  <!--[if (gte mso 9)|(IE)]>
+    </v:textbox>
+    </v:rect>
+  <![endif]-->
+  
+  </td>
+</tr>
+
+
+
+
+// MSO Ghost Tables for 2 columns
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td class="two-columns" style="padding:0; font-size:0;text-align:center">
+
+            <!--[if (gte mso 9) | (IE)]>
+              <table width="100%" style="border-spacing: 0;" role="presentation">
+                <tr>
+                <td width="300" valign="top" style="padding:0">
+            <![endif]-->
+
+
+            <table class="single-column" style="border-spacing:0; vertical-align:top; width: 100%; max-width:300px; display: inline-block" role="presentation">
+              <tr>
+                <td>
+
+                  <table>
+                    <tr>
+                      <td>
+                        <a>
+                        <img>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p></p>
+                        <p></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td>
+                              <a>
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>                
+                
+                </td>
+              </tr>
+            </table>
+
+
+            <!--[if (gte mso 9) | (IE)]>
+              </td>
+              <td width="300" valign="top" style="padding:0">
+            <![endif]-->
+
+
+             <table class="single-column" style="border-spacing:0; vertical-align:top; width: 100%; max-width:300px; display: inline-block" role="presentation">
+              <tr>
+                <td>
+
+                  <table>
+                    <tr>
+                      <td>
+                        <a>
+                        <img>
+                        </a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p></p>
+                        <p></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table>
+                          <tr>
+                            <td>
+                              <a>
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>                
+                
+                </td>
+              </tr>
+            </table>
+
+
+            <!--[if (gte mso 9) | (IE)]>
+              </td>
+              </tr>
+              </table>
+            <![endif]-->
+
+          
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+
+
+
+// MSO Conditional for a 2 Column layout -- in a nutshell 
+
+      <!--[if (gte mso 9) | (IE)]>
+              <table width="100%" style="border-spacing: 0;" role="presentation">
+                <tr>
+                <td width="300" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+                </td>
+                <td width="300" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+            </td>
+            </tr>
+            </table>
+      <![endif]-->
+
+
+
+// MSO Conditional for a 3 Column layout -- in a nutshell 
+
+      <!--[if (gte mso 9) | (IE)]>
+              <table width="100%" style="border-spacing: 0;" role="presentation">
+                <tr>
+                <td width="200" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+                </td>
+                <td width="200" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+                </td>
+                <td width="200" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+            </td>
+            </tr>
+            </table>
+      <![endif]-->
+
+
+
+
+
+
+  // MSO Conditional for a 4 Column layout -- in a nutshell 
+
+      <!--[if (gte mso 9) | (IE)]>
+              <table width="100%" style="border-spacing: 0;" role="presentation">
+                <tr>
+                <td width="150" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+                </td>
+                <td width="150" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+                </td>
+                <td width="150" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+                </td>
+                <td width="150" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+            </td>
+            </tr>
+            </table>
+      <![endif]-->
+
+
+
+
+
+
+  // MSO Conditional for a two thirds Column layout -- in a nutshell 
+
+      <!--[if (gte mso 9) | (IE)]>
+              <table width="100%" style="border-spacing: 0;" role="presentation">
+                <tr>
+                <td width="200" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+                </td>
+                <td width="400" valign="top" style="padding:0">
+      <![endif]-->
+
+
+      <!--[if (gte mso 9) | (IE)]>
+            </td>
+            </tr>
+            </table>
+      <![endif]-->
