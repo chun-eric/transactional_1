@@ -14,9 +14,11 @@
   <style type="text/css">
     @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
-    body {
+    body, html {
       margin: 0;
       background-color: #cccccc;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
     table {
@@ -141,7 +143,7 @@
       }
 
       .icons {
-        fill: #ffffff;
+        color: #ffffff;
       }
 
       }
@@ -208,10 +210,11 @@
         border: 0px !important;
         padding-top: 10px !important;
         width: 360px !important;
+        height: 100% !important;
         max-width: 360px !important;
-        height: 90px !important;
         margin: 0 auto !important;
       }
+     
     }
 
 
@@ -234,7 +237,7 @@
      }
 
     .icons {
-        color: #ffffff;
+        fill: #fff;
      }
     }
   
@@ -265,6 +268,7 @@
 
 
   <center class="wrapper" style="width: 100%; background-color: #ffffff; table-layout: fixed; padding-bottom: 40px; padding-top: 20px">
+
     <div style="max-width: 600px; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.2);"> 
 
 
@@ -279,9 +283,9 @@
         <table width="600" align="center" style="border-spacing:0; color: #565656;" role="presentation">  
         <tr>
           <td style="padding: 0;">
-      <![endif]-->
+    <![endif]-->
 
-    <table class="main" align="center" border="0" cellpadding="0" cellspacing="0" width="600px" border-spacing="0"
+    <table class="main" align="center" border="0" cellpadding="0" cellspacing="0" width="600px" border-spacing="0" role="presentation"
       style="
           color: #565656;
           font-family: 'Lato', sans-serif, Arial, Helvetica !important;
@@ -311,6 +315,8 @@
       <!-- START OF ORDER CONFIRMATION  -->
       <tr>
         <td align="center" style="padding: 25px 0px">
+
+          <!-- add ghost table -->
           <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
               <tr>
                 <td align="center" bgcolor="#F5F4ED" style="
@@ -334,6 +340,8 @@
       <!-- START OF ORDER IS ON THE WAY -->
       <tr>
         <td align="center">
+
+          <!-- add ghost table -->
           <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%">
               <tr>
                 <td align="center" style="
@@ -359,6 +367,8 @@
       <!-- START OF ORDER NUMBER-->
       <tr>
         <td align="center" style="padding-top: 10px">
+
+          <!-- add ghost table -->
           <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%">
               <tr>
                 <td align="center" style="
@@ -381,6 +391,8 @@
       <!-- START OF TRACK ORDER BUTTON -->
       <tr>
         <td align="center" style="padding-top: 25px">
+
+          <!-- add ghost table -->
           <table class="darkmode-transparent" align="center" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
               <tr>
                  <!--[if (gte mso 9) | (IE)]>
@@ -394,7 +406,7 @@
                         padding: 10px 20px;
                         border: none;
                         background-color: #000000;
-                        text-decoration: none;
+                        text-decoration: underline;
                         display: inline-block;
                         cursor: pointer;
                       ">
@@ -654,10 +666,9 @@
                 </td>
                 <td width="20" height="20" class="full-block full-width">&nbsp;</td>
                 <td width="250" class="full-block full-width">
-                  <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
-      
+                <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
                       <tr>
-                        <td align="left" class="full-block full-width">
+                        <td align="left" class="full-block full-width" class="product-details">
                           <h2 class="product-name" style="
                                 margin: 0;
                                 font-family: Arial, Helvetica, sans-serif;
@@ -1146,8 +1157,13 @@
 
       <!-- END OF HTML TABLE-->
     </table>
+    <!-- Main Table ( remove comment ) -->
+    <!--[if (gte mso 9 | (IE)]>
+          </td>
+          </tr>
+        </table>
+      <![endif]-->
   </div>
   </center>
 </body>
-
 </html>
