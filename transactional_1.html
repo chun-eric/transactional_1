@@ -392,12 +392,26 @@
       <tr>
         <td align="center" style="padding-top: 25px">
 
-          <!-- add ghost table -->
+          <!--[if (gte mso 9)|(IE)]>
+            <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;border-collapse:collapse;">
+            <tr>
+            <td  align="center">
+            <a:roundrect 
+            xmlns:a="urn:schemas-microsoft-com:vml" 
+            xmlns:w="urn:schemas-microsoft-com:office:word" 
+            href="#" 
+            fillcolor="#000000" 
+            arcsize="4%" 
+            style="v-text-anchor:middle;width:91.5pt;height:48.75pt;" 
+            stroke="f"><w:anchorlock/>
+            <a:textbox inset="0,0,0,0">
+            <center style="color:#ffffff; font-family:Calibri,sans-serif; font-size:16px">
+        <![endif]-->
           <table class="darkmode-transparent" align="center" border="0" cellspacing="0" cellpadding="0" width="100%" role="presentation">
               <tr>
-                 <!--[if (gte mso 9) | (IE)]>
-                    <td style="padding-top: 12px; padding-bottom: 12px">
-                  <![endif]-->
+                <!--[if (gte mso 9) | (IE)]>
+                    <td  valign="middle" style="padding-top: 12px; padding-bottom: 12px;">
+                <![endif]-->
                 <td align="center">
                   <a href="#" target="_blank" style="
                         color: #ffffff;
@@ -409,6 +423,10 @@
                         text-decoration: underline;
                         display: inline-block;
                         cursor: pointer;
+                        mso-border-alt: none;
+                        mso-padding-alt: 0px;
+                        box-sizing: content-box;
+                        text-align: center;
                       ">
                     Track Package
                   </a>
@@ -418,6 +436,14 @@
                 <![endif]-->
               </tr>
           </table>
+        <!--[if mso]>
+        </center>
+        </a:textbox>
+        </a:roundrect>
+        </td>
+        </tr>
+        </table>
+    	<![endif]-->
         </td>
       </tr>
       <!-- END OF TRACK ORDER BUTTON -->
@@ -649,24 +675,29 @@
       <!-- START OF ORDER ITEMS DETAILS #1 -->
       <tr>
         <td align="center" style="padding-top: 10px">
-          <table align="center" role="presentation" cellpadding="0" cellspacing="0" width="540" border="0">
+          <table align="center" role="presentation" cellpadding="0" cellspacing="0" width="600" height="180" border="0">
               <tr>
-                <td width="220" height="90" class="full-block full-width">
-                  <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%"
-                    height="100%">
-      
+                <td class="two-columns" style="padding: 0;font-size: 0;text-align: center;">
+                  
+                  <!--[if (gte mso 9)|(IE)]>
+                    <table width="100%" style="border-spacing: 0;" role="presentation">
+                    <tr>
+                    <td width="260" valign="top" style="padding: 0;">
+                  <![endif]-->
+                  <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="260" height="180" style="border-spacing: 0;vertical-align: top;width: 100%;max-width: 290px;display: inline-block;" class="full-block full-width">
                       <tr>
-                        <td align="left" class="full-block full-width">
-                          <img class="content" src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" alt="resized-shoes-1" border="0" width="100%"
-                            height="100%" style="display: block; border: none" />
+                        <td align="center" class="full-block full-width">
+                          <img class="content" src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" alt="resized-shoes-1" border="0" style="display: block; border: none; ; width: 260px; height: 175px; padding-left: 5px;" width="100%" />
                         </td>
                       </tr>
-      
-                  </table>
-                </td>
-                <td width="20" height="20" class="full-block full-width">&nbsp;</td>
-                <td width="250" class="full-block full-width">
-                <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                    </table>
+              
+                <!-- <td width="20" height="20" class="full-block full-width">&nbsp;</td>
+                <td width="250" class="full-block full-width"> -->
+                <!--[if (gte mso 9)|(IE)]>
+                  </td><td width="260" valign="top" style="padding: 0;">
+                <![endif]-->
+                <table align="center" role="presentation" cellpadding="0" cellspacing="0" border="0" width="260" height="180" style="max-width:280px;display: inline-block;" class="full-block full-width">
                       <tr>
                         <td align="left" class="full-block full-width" class="product-details">
                           <h2 class="product-name" style="
@@ -727,6 +758,11 @@
                       </tr>
       
                   </table>
+                   <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      </tr>
+                      </table>
+                  <![endif]-->
                 </td>
               </tr>
           </table>
@@ -1043,13 +1079,19 @@
       <tr>
         <td align="center" style="padding-top: 30px;">
           <table align="center" border="0" role="presentation" width="90%" cellspacing="0" cellpadding="0" class="table-width-three">
-              <tr>
-                <td align="center">
-                  <h2
-                    style="Margin:0; padding: 20px 0px; font-family: Arial, sans-serif, Helvetica; color: #ffffff; background-color: #000000; text-transform: uppercase; line-height: 22px; font-size: 20px; letter-spacing: 2px;">
-                    Thank you for your order!</h2>
-                </td>
-              </tr>
+            <tr>
+              <td align="center" style="border-radius: 5px; background-color: #000;">
+                <a href="" style="Margin: 0; padding: 20px 10px; font-family: Arial, sans-serif, Helvetica; color: #fff; text-transform: uppercase; line-height: 22px; font-size: 20px; letter-spacing: 2px; display: inline-block; border: 1px solid #000; background-color: #000; border-radius: 5px; text-decoration: none;">
+                  <!--[if mso]>
+                  <i style="letter-spacing: 25px; mso-font-width: -100%; ">&nbsp;</i>
+                  <![endif]-->
+                  <span style="display:inline-block; vertical-align: middle;">Thank you for your order!</span>
+                  <!--[if mso]>
+                  <i style="letter-spacing: 25px; mso-font-width: -100%;">&nbsp;</i>
+                  <![endif]-->
+                </a>
+              </td>
+            </tr>
           </table>
         </td>
       </tr>
