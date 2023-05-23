@@ -56,12 +56,13 @@
     .two-columns {
       font-size: 0;
       text-align: center;
+      align-items: center;
       padding: 35px 0 40px;
     }
 
     .two-columns .column {
-      width: 100%;
-      max-width: 300px;
+      width: 95%;
+      max-width: 290px;
       display: inline-block;
       vertical-align: top;
     }
@@ -91,6 +92,10 @@
       padding: 0 !important;
     }
 
+    img.content {
+     margin-left: 20px;
+    }
+
     a {
       text-decoration: none;
       color: #37cbbf;
@@ -105,8 +110,15 @@
     line-height: inherit !important;
   }
 
+  .underline {
+      text-decoration: underline !important;
+      font-size: 13px !important;
+    }
+
 
     @media screen and (max-width: 599.98px) {
+      
+
         .two-columns .padding {
           padding-right: 0 !important;
           padding-left: 0 !important;
@@ -146,18 +158,51 @@
         display: none !important;
       }
 
-      img.content {
-        border: 0px !important;
-        padding-top: 10px !important;
-        width: 360px !important;
-        max-width: 360px !important;
+      
+      .column {
         margin: 0 auto !important;
+        display: block !important;
       }
 
-      .icons {
+      .column .center-image {
+        margin: 0 auto !important;
+        align-items: center !important;
+        
+      }
+
+      img.content {
+        padding-top: 10px !important;
+        width: 100%  !important;
+        height: 100% auto !important;
+        max-width: 360px !important;
+        margin-left: 0px !important;
+        display: block !important;
+      }
+
+   
+    .product-info {
+      margin-top: 39px !important;
+      margin-bottom: 3px !important;
+      display: block !important;
+      
+    }
+
+    .details {
+      align-items: center !important;
+      text-align: center !important;
+      
+    }
+
+
+    .icons {
         color: #ffffff;
       }
 
+      .underline {
+      text-decoration: underline !important;
+      color: #000000 !important;
+      font-size: 13px !important;
+    }
       }
     
 
@@ -213,19 +258,57 @@
         font-size: 16px !important;
       } 
     
-       h2.product-name {
+       .product-name {
         font-size: 16px !important;
         letter-spacing: 1px !important;
        }
 
-      img.content {
-        border: 0px !important;
-        padding-top: 10px !important;
-        width: 360px !important;
-        height: 100% !important;
-        max-width: 360px !important;
+       .column {
         margin: 0 auto !important;
+        display: block !important;
       }
+
+      .column .center-image {
+        margin: 0 auto !important;
+        align-items: center !important;
+        
+      }
+
+      img.content {
+        padding-top: 10px !important;
+        width: 100%  !important;
+        height: 100% auto !important;
+        max-width: 360px !important;
+        margin-left: 0px !important;
+        display: block !important;
+      }
+
+   
+    .product-info {
+      margin-top: 39px !important;
+      margin-bottom: 3px !important;
+      display: block !important;
+      
+    }
+
+    .details {
+      align-items: center !important;
+      text-align: center !important;
+      
+    }
+
+
+
+
+      .icons {
+        color: #ffffff;
+      }
+
+      .underline {
+      text-decoration: underline !important;
+      color: #000000 !important;
+      font-size: 13px !important;
+    }
      
     }
 
@@ -246,6 +329,10 @@
      /* Custom Dark Mode Font Colors */ 
      h1, h2, span, a, p  {
       color: #ffffff !important;
+     }
+
+     .line {
+      background-color: #ffffff !important;
      }
 
     .icons {
@@ -456,8 +543,14 @@
                 <td style="padding-top: 10px">
                   <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%" class="table-width-two">
                       <tr>
-                        <td height="2" style="background-color: #000000;">
+                          <!--[if (gte mso 9 | (IE)]>
+                          <td style="background-color: #000000">
+                         <![endif]-->
+                        <td class="line" height="2px" style="background-color: #000000;">
                         </td>
+                         <!--[if (gte mso 9)|(IE)]>
+                            </td>
+                        <![endif]-->
                       </tr>
       
                   </table>
@@ -644,7 +737,7 @@
                   <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%" class="table-width table-width-four">
                     <tbody >
                       <tr>
-                        <td height="2" style="background-color: #000000;">
+                        <td class="line" height="2" style="background-color: #000000;">
                         </td>
                       </tr>
       
@@ -660,93 +753,114 @@
       <tr>
         <td style="padding: 0; padding-top: 15px">
         <table align="center" role="presentation" cellpadding="0" cellspacing="0" width="600" height="180" border="0">
-          <tr>
-            <td class="two-columns" style="padding: 0;font-size: 0;text-align: center;">
-          <!--[if (gte mso 9)|(IE)]>
-          <table width="100%" style="border-spacing: 0;" role="presentation">
             <tr>
-            <td width="260" valign="top" style="padding: 0;">
-          <![endif]-->
-          <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block; height: 175px;" role="presentation">
-            <tr>
-              <td  style="padding-left:23px; padding-top: 0; margin: 0px; ">
-                <!-- Left Column Content -->
-                <a>
-                  <img class="content" src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" alt="resized-shoes-1" border="0" style="display: inline-block; border: none; ; width: 260px; height: 175px; padding-left: 5px;" width="100%">
-                </a>
-              </td>
-            </tr>
-          </table>
-          <!--[if (gte mso 9)|(IE)]>
-              </td>
-              <td width="300" valign="top" style="padding: 0;">
-          <![endif]-->
-          <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 300px; display: inline-block; height: 180px;" role="presentation">
-            <tr>
-              <td align="left" class="full-block full-width" class="product-details">
-                          <h2 class="product-name" style="
+              <td align="center" class="two-columns column" style="padding: 0;font-size: 0;text-align: center;">
+                  <!--[if (gte mso 9)|(IE)]>
+                  <table width="100%" style="border-spacing: 0;" role="presentation">
+                    <tr>
+                    <td width="290" valign="top" style="padding: 0;">
+                  <![endif]-->
+                  <table class="column" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 290px; display: inline-block; height: 175px;" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td align="center" class="center-image" style=" padding-top: 0; margin: 0px;" valign="top">
+                        <!-- Left Column Content -->
+                        <a>
+                          <img align="center" class="content" src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" alt="resized-shoes-1" border="0" style="display: inline-block; border: none; ; width: 250px; height: 175px;" width="100%">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                      <td width="290" valign="top" style="padding-top: 10;">
+                  <![endif]-->
+                  <table class="column product-info" style="border-spacing: 0; vertical-align: top; width: 100%; max-width: 290px; display: inline-block; height: 180px; margin-left: 5px" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                      <td align="left"  >
+                          <table  style="border-spacing: 0;text-align: left;" role="presentation" class="">
+                            <tr>
+                              <td class="details">
+                                <p class="product-name" style="
+                                        margin: 0;
+                                        font-family: Arial, Helvetica, sans-serif;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        text-transform: uppercase;
+                                        color: #000000;
+                                        letter-spacing: 2px;
+                                        line-height: 22px;
+                                      ">
+                                    Black Low Cut Puma Shoes
+                                  </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="full-block full-width details" style="padding-top: 10px">
+                                <p class="text-padding" style="
                                 margin: 0;
-                                font-family: Arial, Helvetica, sans-serif;
+                                font-family: Arial, sans-serif, Helvetica;
+                                line-height: 25px;
+                                font-weight: normal;
                                 font-size: 14px;
-                                font-weight: bold;
-                                text-transform: uppercase;
-                                color: #000000;
-                                letter-spacing: 2px;
-                                line-height: 22px;
                               ">
-                            Black Low Cut Puma Shoes
-                          </h2>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td align="left" class="full-block full-width" style="padding-top: 10px">
-                          <p class="text-padding" style="
-                          margin: 0;
-                          font-family: Arial, sans-serif, Helvetica;
-                          line-height: 25px;
-                          font-weight: normal;
-                          font-size: 14px;
-                        ">
-                      Item #: 987504
-                  </p>
-                  <p class="text-padding" style="margin: 0;
-                  font-family: Arial, sans-serif, Helvetica;
-                  line-height: 25px;
-                  font-weight: normal;
-                  font-size: 14px;">
-                      Style: 3BADP978
-                  </p>
-                  <p class="text-padding" style="margin: 0;
-                  font-family: Arial, sans-serif, Helvetica;
-                  line-height: 25px;
-                  font-weight: normal;
-                  font-size: 14px;">
-                    Color: BLACK / DARK
-                  </p>
-                    <p class="text-padding" style="margin: 0;
-                    font-family: Arial, sans-serif, Helvetica;
-                    line-height: 25px;
-                    font-weight: normal;
-                    font-size: 14px;">
-                          Quantity: 1
-                    </p>
-                      
-                    <p class="text-padding" style=" 
-                      margin: 0;
-                      font-family: Arial, sans-serif, Helvetica;
-                      line-height: 25px;
-                      font-weight: bold;
-                      font-size: 16px;">Price: $50.00
-                    </p>
-                  </td>
-                </tr>
-             </table>
-              <!--[if (gte mso 9)|(IE)]>
-                  </td>
-                </tr>
-              </table>
-              <![endif]-->
-              </td>
+                            Item #: 987504
+                               </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="details">
+                                <p class="text-padding" style="margin: 0;
+                                font-family: Arial, sans-serif, Helvetica;
+                                line-height: 25px;
+                                font-weight: normal;
+                                font-size: 14px;">
+                                    Style: 3BADP978
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="details">
+                                <p class="text-padding" style="margin: 0;
+                                font-family: Arial, sans-serif, Helvetica;
+                                line-height: 25px;
+                                font-weight: normal;
+                                font-size: 14px;">
+                                  Color: BLACK / DARK
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="details">
+                                <p class="text-padding" style="margin: 0;
+                                font-family: Arial, sans-serif, Helvetica;
+                                line-height: 25px;
+                                font-weight: normal;
+                                font-size: 14px;">
+                                      Quantity: 1
+                            </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="details">
+                                <p class="text-padding" style=" 
+                                margin: 0;
+                                font-family: Arial, sans-serif, Helvetica;
+                                line-height: 25px;
+                                font-weight: bold;
+                                font-size: 16px;">Price: $50.00
+                              </p>
+                              </td>
+                            </tr>
+                        </table>
+                          </td>
+                        </tr>
+                    </table>
+                  <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                    </tr>
+                  </table>
+                  <![endif]-->
+                </td>
               </tr>
           </table>
         </td>
@@ -759,7 +873,7 @@
           <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%" class="table-width table-width-three">
             <tbody >
               <tr>
-                <td height="2" style="background-color: #000000;">
+                <td class="line" height="2" style="background-color: #000000;">
                 </td>
               </tr>
           </table>
@@ -864,7 +978,7 @@
 
           <table class="table-width table-width-three" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%">
               <tr>
-                <td height="2" style="background-color: #000000;">
+                <td class="line" height="2" style="background-color: #000000;">
                 </td>
               </tr>
           </table>
@@ -968,7 +1082,7 @@
         <td style="padding-top: 10px">
           <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"  width="90%" class="table-width-three">
               <tr>
-                <td height="2" style="background-color: #000000;">
+                <td class="line" height="2" style="background-color: #000000;">
                 </td>
               </tr>
           </table>
@@ -1026,7 +1140,7 @@
         <td style="padding-top: 10px">
           <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%" class="table-width-three">
               <tr>
-                <td height="2" style="background-color: #000000;">
+                <td class="line" height="2" style="background-color: #000000;">
                 </td>
               </tr>
           </table>
@@ -1068,7 +1182,7 @@
                   <!--[if mso]>
                   <i style="letter-spacing: 25px; mso-font-width: -100%; ">&nbsp;</i>
                   <![endif]-->
-                  <span style="display:inline-block; vertical-align: middle;">Thank you for your order!</span>
+                  <span class="font-reduce" style="display:inline-block; vertical-align: middle;">Thank you for your order!</span>
                   <!--[if mso]>
                   <i style="letter-spacing: 25px; mso-font-width: -100%;">&nbsp;</i>
                   <![endif]-->
@@ -1101,11 +1215,11 @@
         <td align="center" style="padding-top: 10px">
           <table align="center" border="0" role="presentation" width="90%" cellspacing="0" cellpadding="0" width="90%">
               <tr>
-                <td width="50" align="right"><a href="#" target="_blank"
+                <td class="one-line" width="50" align="right"><a href="#" target="_blank"
                     style="color:#000000; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; line-height: 20px; text-decoration: underline;">Contact
                     Us</a></td>
                 <td width="5" height="20">&nbsp;</td>
-                <td width="50" align="left"><a href="#" target="_blank"
+                <td class="one-line" width="50" align="left"><a href="#" target="_blank"
                     style="color:#000000; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: normal; line-height: 20px; text-decoration: underline;">Privacy
                     Policy</a></td>
               </tr>
