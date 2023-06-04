@@ -35,9 +35,11 @@
       <![endif]-->
       <style type="text/css">
         table, td, div, h1, p {font-family: Arial, sans-serif;}
-		    table, td {border:0px solid #000000 !important;}
+		    table, td {}
         
-        
+         <!--[if mso]>
+                                  
+        <![endif]-->
         body, html {
       	margin: 0;
       	background-color: #cccccc;
@@ -84,13 +86,18 @@
         /* Dark Mode media queries to target Apple and iOS*/
           @media (prefers-color-scheme: dark) {
             /* Custom Dark Mode Background Color */
+            html {
+              background: #000000 !important;
+            }
             body, center, table,td, div {
-              background: #242424 !important;
+              background: #333 !important;
               color: #ffffff!important;
+              border: none !important;
             } 
             
             .spacer {
               color: #000000 !important;
+              background: #333 !important;
             }
 
            /* Custom Dark Mode Font Colors */ 
@@ -116,7 +123,7 @@
              height: 2px !important;
              border-bottom:  2px solid #ffffff !important;"
              width: 95% !important;
-             text-align: centered !important;
+             text-align: center !important;
            }
 
       
@@ -155,12 +162,14 @@
             margin-left:3px !important;
             margin-right: 3px !important;
           }
-      
-          .two-col .column .column-info  {
-       				max-width: 100% !important;
-              text-align: center !important;
+          
+     
+        .column-info {
+            text-align: center !important;
           }
+           	
 
+        	 
         }
 
         @media (min-width: 350px) and (max-width: 460px) {
@@ -174,18 +183,29 @@
             margin-left: 3px !important;
             margin-right: 3px !important;
           }
-          .two-col .column .column-info  {
-       				max-width: 100% !important;
-              text-align: center !important;
+          
+       		.column-info.right-column {
+            text-align: center !important;
           }
-      
+          
+          .column-info.left-column {
+            text-align: center !important;
+          }
+           	
+        
           
         }
 
         @media (max-width: 460px) {
-          .two-col .column {
-            max-width: 100% !important;
+         		.column-info.right-column {
+            text-align: center !important;
           }
+          
+          .column-info.left-column {
+            text-align: center !important;
+          }
+           	
+          
           .two-col img {
             width: 100% !important;
           }
@@ -193,6 +213,8 @@
             margin-left: 7px !important;
             margin-right: 7px !important;
           }
+        
+        
         }
 
         @media (min-width: 460px) {
@@ -212,11 +234,20 @@
             margin-left: 13px !important;
             margin-right: 13px !important;
           }
+          .column-info.right-column {
+            text-align: right !important;
+          }
+          
+          .column-info.left-column {
+            text-align: left !important;
+          }
+         
+        
         }
 
       </style>
 </head>
-<body style="margin:0;padding:0;word-spacing:normal;background-color:#FAFAFA;">
+<body style="margin:0;padding:0;word-spacing:normal;">
   <!-- below div is the outer wrapper, role=article and aria-roledescription=email helps screen readers announce its an email or at least an article and will assist navigation b-->
     <div role="article" aria-roledescription="email" lang="en" style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
         <table role="presentation" style="width:100%;border:0;border-spacing:0;">
@@ -339,15 +370,15 @@
 
 
                     <!-- Two Column Layout Shipping & Billing Address -->
-                    <div class="two-col" style="text-align: center; font-size:0;"> <!-- font size 0 so that column can sit side by side -->
+                    <div class="two-col" style=" font-size:0;"> <!-- font size 0 so that column can sit side by side -->
                       <!--[if mso]>
                         <table role="presentation" width="100%">
                         <tr>
                         <td style="width:50%; padding: 10px;" valign="middle">
                       <![endif]-->
-                      <div class="column column-centered" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
-                        <div class="column-info" align="left" style="padding:10px; font-size:14px;line-height:18px;text-align:left;">
-                          <h2 style="margin: 0;
+                      <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
+                        <div class="column-info left-column" style="padding:10px; font-size:14px;line-height:18px;">
+                          <h2 class="heading" style="margin: 0;
                           color: #1b1715;
                           font-family: Arial, sans-serif, Helvetica;
                           font-size: 14px;
@@ -398,8 +429,8 @@
                         </td>
                         <td style="width:50%;padding: 10px;" valign="middle">
                       <![endif]-->
-                      <div class="column column-centered" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
-                        <div align="right" style="padding:10px; font-size:14px;line-height:18px;text-align:right;">
+                      <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
+                        <div class="column-info right-column" style="padding:10px; font-size:14px;line-height:18px;">
                           <h2 style="margin: 0;
                           color: #1b1715;
                           font-family: Arial, sans-serif, Helvetica;
@@ -598,7 +629,7 @@
 
 
                        
-                    <!-- horizontal line brea -->   
+                    <!-- horizontal line break -->   
                     <div class="line darkmode" width="97%" style="color:#F5f4ED;height:21px;border-bottom: 2px solid #F5f4ED;">
                     </div>
 
@@ -882,14 +913,14 @@
                         
                         
             			 <!-- Single Column Contact Us -->
-                  <table role="presentation" style="border:0; border-spacing:0;width: 100%;">
+                  <table align="center" role="presentation" style="border:0; border-spacing:0;width: 100%; text-align:center; align-items:center;">
                     <tr>
-                      <td width="50" align="right" style="padding: 10px; padding-top:0px;">
+                      <td  align="center" style="padding: 10px; padding-top:0px;display:inline-block;margin-right: 3px; padding-right:1px;">
                         <a href="#" target="_blank"
                           style="color:#000000; font-size: 12px; font-family: Arial, sans-serif; font-weight: normal; line-height: 20px; text-decoration: underline;">Unsubscribe</a>
                       </td>
                  
-                      <td  width="50" align="left" style="padding: 10px; padding-top:0px;">
+                      <td  align="center" style="padding: 10px; padding-top:0px; display:inline-block; margin-left: 3px; padding-left:1px;">
                         <a href="#" target="_blank"
                           style="color:#000000; font-size: 12px; font-family: Arial,  sans-serif; font-weight: normal; line-height: 20px; text-decoration: underline;">Privacy
                           Policy</a>
@@ -939,7 +970,7 @@
                   
                    <!-- white space break -->
                 <div class="spacer" style="line-height: 20spx; height: 20px; mso-line-height-rule: exactly;">&nbsp;</div>
-                    
+
                        
 
                   <!--[if mso]>
