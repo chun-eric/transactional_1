@@ -95,6 +95,27 @@
               border: none !important;
             } 
             
+            [data-ogsc] body,
+             [data-ogsc] center,
+             [data-ogsc] table,
+             [data-ogsc] td,
+            [data-ogsc] div,
+            {
+               background: #333 !important;
+              color: #ffffff!important;
+              border: none !important;
+            }            
+            
+              [data-ogsb] body,
+             [data-ogsb] center,
+             [data-ogsb] table,
+             [data-ogsb] td,
+            [data-ogsb] div, {
+              background: #333 !important;
+              color: #ffffff!important;
+              border: none !important;
+            }
+            
             .spacer {
               color: #000000 !important;
               background: #333 !important;
@@ -163,18 +184,30 @@
             margin-right: 3px !important;
           }
           
-     
-        .column-info {
-            text-align: center !important;
+           .two-col .column {
+            max-width: 100% !important;
           }
+     
+       	.column-info.right-column {
+              text-align: center !important;
+            }
+
+        .column-info.left-column {
+          text-align: center !important;
+        } 
            	
-
-        	 
         }
-
+        
+  
+        
+      
         @media (min-width: 350px) and (max-width: 460px) {
           .three-col .column {
             max-width: 50% !important;
+          }
+          .two-col .column {
+            display: block !important;
+            max-width: 100% !important;
           }
           h1 {
             font-size: 32px !important;
@@ -183,39 +216,55 @@
             margin-left: 3px !important;
             margin-right: 3px !important;
           }
+/* 
+          .two-col .column {
+            max-width: 100% !important;
+          } */
           
-       		.column-info.right-column {
-            text-align: center !important;
-          }
-          
-          .column-info.left-column {
-            text-align: center !important;
-          }
-           	
-        
-          
-        }
+    		.column-info.right-column {
+    		  max-width: 100% !important;
+              text-align: center !important;
+            }
 
-        @media (max-width: 460px) {
-         		.column-info.right-column {
+        .column-info.left-column {
+          max-width: 100% !important;
+          text-align: center !important;
+        } 
+          
+         .two-col img {
+          width: 100% !important;
+           height: auto !important;
+           display: block !important;
+        } 
+      }
+        
+        
+
+  /*       @media (max-width: 460px) {
+             .column-info.right-column {
             text-align: center !important;
           }
-          
+        
           .column-info.left-column {
             text-align: center !important;
           }
-           	
+                         
+             .two-col .column {
+            width: 50% !important;
+            text-align: center !important;
+          }
           
           .two-col img {
             width: 100% !important;
+            height: auto !important;
+           display: block !important;
           }
             .line {
             margin-left: 7px !important;
             margin-right: 7px !important;
           }
         
-        
-        }
+        } */
 
         @media (min-width: 460px) {
           .three-col .column {
@@ -223,6 +272,7 @@
           }
           .two-col .column {
             width: 50% !important;
+            
           }
           .sidebar .small {
             max-width: 16% !important;
@@ -234,15 +284,36 @@
             margin-left: 13px !important;
             margin-right: 13px !important;
           }
-          .column-info.right-column {
-            text-align: right !important;
+        .column-info.right-column {
+            text-align: center !important;
           }
           
           .column-info.left-column {
+            text-align: center !important;
+          }
+          
+          
+          @media (min-width: 460px) and (max-width: 660px) {
+              .two-col .column-info.right-column {
+            text-align: right !important;
+          }
+           .two-col  .column-info.left-column {
             text-align: left !important;
           }
-         
-        
+            
+          }
+          
+          @media (min-width: 660px) {
+          
+            .two-col .column-info.right-column {
+            text-align: right !important;
+          }
+          
+          .two-col  .column-info.left-column {
+            text-align: left !important;
+          } 
+          }
+          
         }
 
       </style>
@@ -261,7 +332,7 @@
                       <div class="outer" style="width:96%; max-width: 660px; margin:20px auto;background-color:#ffffff; padding-left: 10px; padding-right: 10px; ">
                         
 
-                         <!-- white space break -->
+                      <!-- white space break -->
                       <div class="spacer" style="line-height: 20spx; height: 20px; mso-line-height-rule: exactly;">&nbsp;</div>
 
                         <!-- Single Column Header Logo -->
@@ -377,7 +448,7 @@
                         <td style="width:50%; padding: 10px;" valign="middle">
                       <![endif]-->
                       <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
-                        <div class="column-info left-column" style="padding:10px; font-size:14px;line-height:18px;">
+                        <div class="column-info left-column" style="padding:10px; font-size:14px;line-height:18px;  ">
                           <h2 class="heading" style="margin: 0;
                           color: #1b1715;
                           font-family: Arial, sans-serif, Helvetica;
@@ -430,7 +501,7 @@
                         <td style="width:50%;padding: 10px;" valign="middle">
                       <![endif]-->
                       <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
-                        <div class="column-info right-column" style="padding:10px; font-size:14px;line-height:18px;">
+                        <div class="column-info right-column" style="padding:10px; font-size:14px;line-height:18px; ">
                           <h2 style="margin: 0;
                           color: #1b1715;
                           font-family: Arial, sans-serif, Helvetica;
@@ -541,6 +612,15 @@
                         </td>
                       </tr>
                       </table>
+                        
+                        
+                      <!-- white space break -->
+                   <!--[if mso]>
+												<i style="letter-spacing:50px;mso-font-width:-100%;display:inline-block;width:50px">&#8202;
+ 											<![endif]-->
+                  <!--[if mso]>
+												</i>
+ 											<![endif]-->
 
 
   									<!-- horizontal line brea -->   
@@ -806,36 +886,36 @@
                   <!-- Single Column Layout Item Calculation with multiple rows  -->
                   <table role="presentation" style="border:0; border-spacing:0; width: 100%;">
                     <tr >
-                      <td align="left" width="50% "style="padding:2px; padding-right:20px; ">
+                      <td align="left" width="50% "style="padding-top: 7px;padding:2px; padding-right:20px;  mso-padding-bottom-alt:10px; mso-padding-top-alt:10px; mso-padding-left-alt:18px; ">
                         <p style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 16px;padding-top: 10px; 
-                        padding-left:20px; 
+                        padding-left:20px;
                         color:#000000">
                           Subtotal
                         </p>
                       </td>
-                      <td align="right" width="50%" style="padding:2px">
+                      <td align="right" width="50%" style="padding-top: 7px; padding:2px; mso-padding-bottom-alt:10px; mso-padding-top-alt:10px; mso-padding-right-alt:18px;">
                         <p style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 16px;padding-top: 10px; padding-right:20px; color:#000000">
-                          $230
+                          $230.00
                         </p>
                       </td>
                     </tr>
                     <tr >
-                      <td align="left" width="50%" style="padding:2px">
+                      <td align="left" width="50%" style="padding:2px; mso-padding-bottom-alt:10px; mso-padding-top-alt:10px; mso-padding-left-alt:18px;">
                         <p style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 16px;padding-top: 10px; padding-left:20px; color:#000000">Shipping Cost</p>
                       </td>
-                      <td align="right" style="padding:2px">
+                      <td align="right" style="padding:2px; mso-padding-bottom-alt:10px; mso-padding-top-alt:10px; mso-padding-right-alt:18px;">
                       <p style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 16px;
                       padding-top: 10px; padding-right:20px; color:#000000">
-                        $15
+                        $15.00
                       </p>
                       </td>
                     </tr>
                     <tr >
-                      <td align="left" width="50% "style="padding:2px; padding-bottom: 7px;">
+                      <td align="left" width="50% "style="padding:2px; padding-bottom: 7px; mso-padding-bottom-alt:10px; mso-padding-top-alt:10px; mso-padding-left-alt:18px;">
                       <p style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 16px;
                       padding-top: 10px; padding-left:20px; color:#000000">Sales Tax (10%)</p>
                       </td>
-                      <td align="right" width="50%" style="padding:2px; padding-bottom: 7px;">
+                      <td align="right" width="50%" style="padding:2px; padding-bottom: 7px;mso-padding-bottom-alt:10px; mso-padding-top-alt:10px; mso-padding-right-alt:18px;">
                         <p style="Margin: 0;font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: normal; line-height: 16px;padding-top: 10px; padding-right:20px; color:#000000">
                           $23.00
                         </p>
@@ -847,7 +927,10 @@
 
 
                   <!--  horizontal line break -->
-                    <div class="line" width="97%" style="color:#F5f4ED;height:10px;border-bottom: 2px solid #F5f4ED;">
+                          <!--[if mso]>
+												<i style="letter-spacing:50px;mso-font-width:-100%;display:inline-block;width:50px: border-bottom: 1px solid #000000;">&#8202;
+ 											<![endif]-->
+                    <div class="line" width="97%" style="color:#F5f4ED;height:10px;border-bottom: 2px solid #F5f4ED; mso-shading: #000000 ">
                         </div>                        
 
 
@@ -867,17 +950,24 @@
 
                         
                    <!-- white space break -->
+                   <!--[if mso]>
+												<i style="letter-spacing:50px;mso-font-width:-100%;display:inline-block;width:50px">&#8202;
+ 											<![endif]-->
                   <div class="spacer" style="line-height:2px;height:20px;mso-line-height-rule:exactly;">&nbsp;</div>
-                        
-                        
+                  <!--[if mso]>
+												</i>
+ 											<![endif]-->
                         
                       
   									<!-- Single Column Button -->
-                    <table role="presentation" style="border:0; border-spacing:0;width: 100%;">
+                      <!--[if mso]>
+										
+ 											<![endif]-->
+                    <table align="center" role="presentation" style="border:0; border-spacing:0;width: 95%;">
                       <tr>
-                        <td align="center" style="font-family: Arial, sans-serif; padding:10px;">
+                        <td  bgcolor="#000000" align="center" style="font-family: Arial, sans-serif; ">
                           <p style="Margin:0; font-family: Arial, sans-serif;">
-                            <a href="#" class="button-border" style="Margin: 0; padding: 20px 10px; text-align:center; width: 95%;font-family: Arial, sans-serif, Helvetica; color: #fff; text-transform: uppercase; line-height: 22px; font-size: 20px; letter-spacing: 2px; display: inline-block; border: 1px solid #000; background-color: #000; border-radius: 5px; text-decoration: none;">
+                            <a href="#" class="button-border" style="Margin: 0; padding: 20px 10px; text-align:center; width: 85%;font-family: Arial, sans-serif, Helvetica; color: #fff; text-transform: uppercase; line-height: 22px; font-size: 20px; letter-spacing: 2px; display: inline-block; border: 1px solid #000; background-color: #000; border-radius: 5px; text-decoration: none;">
                               <!--[if mso]>
                                  <i style="mso-font-width:150%;mso-text-raise:100%" hidden>&#8195;
                                 </i>
@@ -891,6 +981,9 @@
                         </td>
                       </tr>
                     </table>
+                      <!--[if mso]>
+											
+ 											<![endif]-->
 
 
        
@@ -915,16 +1008,25 @@
             			 <!-- Single Column Contact Us -->
                   <table align="center" role="presentation" style="border:0; border-spacing:0;width: 100%; text-align:center; align-items:center;">
                     <tr>
-                      <td  align="center" style="padding: 10px; padding-top:0px;display:inline-block;margin-right: 3px; padding-right:1px;">
+                     <!--[if mso]>
+                         <td align="right" style=" display: inline-block; mso-padding-top-alt:5px;display:inline-block; padding-right-alt:3px;">
+                      <![endif]-->
+                      <td  align="right" style="padding: 10px; padding-top:0px;display:inline-block;margin-right: 3px; padding-right:1px;">
                         <a href="#" target="_blank"
                           style="color:#000000; font-size: 12px; font-family: Arial, sans-serif; font-weight: normal; line-height: 20px; text-decoration: underline;">Unsubscribe</a>
                       </td>
-                 
-                      <td  align="center" style="padding: 10px; padding-top:0px; display:inline-block; margin-left: 3px; padding-left:1px;">
+                     	<!--[if mso]>
+														</td>
+                            <td align="left" style=" padding-top-alt:5px; display:inline-block;  padding-left-alt:3px;">
+                      <![endif]-->
+                      <td  align="left" style="padding: 10px; padding-top:0px; display:inline-block; margin-left: 3px; padding-left:1px;">
                         <a href="#" target="_blank"
                           style="color:#000000; font-size: 12px; font-family: Arial,  sans-serif; font-weight: normal; line-height: 20px; text-decoration: underline;">Privacy
                           Policy</a>
                         </td>
+                      <!--[if mso]>
+                          </td>
+                      <![endif]-->
                       </tr>
                     </table>
                         
@@ -934,24 +1036,51 @@
                     <table role="presentation" style="border:0; border-spacing:0; width: 100%;">
                       <tr>
                         <td align="center" style="padding:10px;">
-                          <a href="www.facebook.com" style="text-decoration: none;margin-right: 5px;">
+                         <!--[if mso]>
+                          <table align="center" role="presentation" style="display: inline-block; border-collapse: separate;">
+                              <tr>
+                              <td style="padding-right: 14px;">
+                          <![endif]-->
+                          <a href="http://www.facebook.com" style="text-decoration: none;margin-right: 5px;">
                               <img class="icons-background" src="https://i.ibb.co/7KPprTk/icons8-facebook-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
-                            <a href="www.instagram.com" style="text-decoration: none;margin-right: 5px;">
+                           <!--[if mso]>
+                            </td>
+                            <td style="padding-right: 14px;">
+                          <![endif]-->
+                            <a href="http://www.instagram.com" style="text-decoration: none;margin-right: 5px;">
                               <img src="https://i.ibb.co/X7KP5Np/icons8-instagram-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
-                            <a href="www.linkedin.com" style="text-decoration: none;margin-right: 5px;">
+                           <!--[if mso]>
+                            </td>
+                            <td style="padding-right: 14px;">
+                            <![endif]-->
+                            <a href="http://www.linkedin.com" style="text-decoration: none;margin-right: 5px;">
                               <img src="https://i.ibb.co/KxjFY8p/icons8-linkedin-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
-                            <a href="www.twitter.com" style="text-decoration: none;margin-right: 5px;">
+                           <!--[if mso]>
+                              </td>
+                              <td style="padding-right: 14px;">
+                          <![endif]-->
+                            <a href="http://www.twitter.com" style="text-decoration: none;margin-right: 5px;">
                               <img src="https://i.ibb.co/hBgQBWj/icons8-twitter-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
-                            <a href="www.youtube.com" style="text-decoration: none;margin-right: 5px;">
+                          <!--[if mso]>
+                              </td>						
+                            	<td style="padding-right: 14px;">
+                					<![endif]-->
+                            <a href="http://www.youtube.com" style="text-decoration: none;margin-right: 5px;">
                               <img src="https://i.ibb.co/c2ccqNR/icons8-youtube-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
+                            <!--[if mso]>
+                              </td>
+                            </tr>
+                          </table>
+                          <![endif]-->
                         </td>
                       </tr>
                     </table>
+              
                         
                         
                         
