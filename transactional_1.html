@@ -45,19 +45,24 @@
 
 		.table-line {
 		margin-left: 10px !important;
-		margin-left: 10px !important;
+	
 		}
 
 		.outlook-button  {
 		mso-border-radius-alt: 5px !important;
 		}
 
-		darkmode-outlook-button {
-
+		.darkmode-button {
+background: transparent !important;
 		}
 
       </style>
     <![endif]--> 
+  
+
+      
+      
+
   
       <style type="text/css">
           table, td, div, h1, p {font-family: Arial, sans-serif;}
@@ -120,7 +125,7 @@
        	 <![endif]-->
             
             
-        
+        	
             
               body, center, table,td, div {
           	 background: #333 !important;
@@ -161,11 +166,11 @@
             }
             
             [data-ogsc] .line {
-               color: #F7F8F9!important;
+              border-bottom: 1px solid #ffffff !important;
             }
             
              [data-ogsb] .line {
-               color: #F7F8F9!important;
+               border-bottom: 1px solid #ffffff !important;
             }
             
             .spacer {
@@ -190,8 +195,7 @@
             }
             
             .line {
-            color:#F7F8F9 !important;
-    				background: #F7F8F9 !important;
+           border-bottom: 1px solid #ffffff !important;
            
            }
             
@@ -223,12 +227,19 @@
            .darkmode-transparent {
               background-color: transparent!important;
           }
+             .darkmode-background {
+              background-color: #333 !important;
+            } 
+            .darkmode-button {
+              background-color: #8a8383 !important;
+            }
         }
 
         
         
         @media (max-width: 350px) {
           .three-col .column {
+            width: 95% !important;
             max-width: 100% !important;
           }
           
@@ -246,8 +257,20 @@
             margin-right: 3px !important;
           }
           
-           .two-col .column {
-            max-width: 100% !important;
+         .two-col .column {
+       				width: 95% !important;
+              max-width: 100% !important;
+              text-align: center !important;
+          }
+          
+          .order-column-left {
+           text-align: center !important; 
+           
+          }
+          
+           .order-column-left {
+           text-align: center !important; 
+           
           }
      
        		.column-info.right-column {
@@ -265,8 +288,13 @@
             width: 330px !important;
             max-width: 100% !important;
         }
-          
-        
+          .btn-fontSize {
+            font-size: 10px !important;
+          }
+         .shoe-img {
+            width: 100% !important;
+            max-width: 100% !important;
+          }
            	
       }
         
@@ -277,9 +305,15 @@
           .three-col .column {
             max-width: 50% !important;
           }
-          .two-col .column {
+     			  .two-col .column {
+     			
+     
+        text-align: center !important;
+    }
+          
+             .order-column-left {
+           text-align: center !important; 
             
-            max-width: 100% !important;
           }
           
           h1 {
@@ -297,17 +331,17 @@
           }
           
     		 .two-col .column .right-column {
-            max-width: 100% !important;
-            display: block !important;
+       
+    
             text-align: center !important;
-            margin: 0 auto !important;
+          
             }
 
         .two-col .column .left-column {
             max-width: 100% !important;
-            display: block !important;
+        
             text-align: center !important;
-            margin: 0 auto !important;
+        
         } 
           
          .two-col .column img {
@@ -317,14 +351,17 @@
            } 
           
           .two-col .column-info.right-column h2 {
-            display: block !important;
+    
             width: 440px !important;
             max-width: 100% !important;
           }
-          
-     
-          
-    
+      		.btn-fontSize {
+            font-size: 10px !important;
+          }
+          .shoe-img {
+            width: 100% !important;
+            max-width: 100% !important;
+          }
       }
         
         
@@ -338,6 +375,14 @@
           .two-col .column {
             width: 50% !important;
             
+          }
+            .order-column-left {
+           text-align: left !important; 
+ 
+          }
+           .order-column-right {
+           text-align: right !important; 
+ 
           }
           .sidebar .small {
             max-width: 16% !important;
@@ -361,7 +406,7 @@
           .two-col .column .left-column {
             text-align: left !important;
           }
-          
+        }   
           
           
           
@@ -371,23 +416,39 @@
           }
            .two-col .column .left-column {
             text-align: left !important;
+          }     
+        .order-column-left {
+           text-align: left !important; 
+ 
           }
-            
+           .order-column-right {
+           text-align: right !important; 
+ 
+          }
           }
           
           @media (min-width: 600px) and (max-width: 1200px) {
             .two-col .column .right-column {
             text-align: right !important;
+              align-items: right !important;
           }
           
           .two-col .column .left-column {
             text-align: left !important;
+            align-items: left !important;
           } 
+               .order-column-left {
+           text-align: left !important; 
+ 
           }
+           .order-column-right {
+           text-align: right !important; 
+ 
+          }
+          }
+        
           
-      
-          
-        }
+        
 
       </style>
 </head>
@@ -474,14 +535,14 @@
                           <!--[if mso]>
                             <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" 
                               href="https://www.example.com"
-                              style="height:50px;v-text-anchor:middle;width:150px;font-size:14px;" 
+                              style="height:50px;v-text-anchor:middle;width:150px;font-size:14px;mso-style-textfill-fill-color:#ffffff" 
                               arcsize="8%" 
                               stroke="f" 
                               fillcolor="#4e4e4e">
                             <w:anchorlock/>
                             <center>
                           <![endif]-->
-                          <a class="button-border"  href="https://www.example.com" style="background-color:#4e4e4e;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">Track Package
+                          <a class="darkmode-button keep-white-second"  href="https://www.example.com" style="mso-style-textfill-fill-color:#ffffff;background-color:#4e4e4e;border-radius:4px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;">Track Package
                           </a>
                           <!--[if mso]>
                           </center>
@@ -517,7 +578,10 @@
                 
                         
                     <!-- horizontal line break v3 -->  
-                    <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
+                               <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                          <tr>
+                            <td>
+                                         <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
                     <tr>
                       <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #000000; " height="1" > </td>
                     </tr>
@@ -525,16 +589,21 @@
                       <td style="line-height: 20px;font-size:20px;" height="20"> </td>
                     </tr> -->
                   </table>
+                            </td>
+                          </tr>
+                        </table>
+         
 
 
                     <!-- Two Column Layout Shipping & Billing Address -->
-                    <div class="two-col" style=" font-size:0;"> <!-- font size 0 so that column can sit side by side -->
-                      <!--[if mso]>
-                        <table role="presentation" width="100%">
+                             <!--[if gte mso 9 || (IE) ]>
+                        <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                         <tr>
-                        <td style="width:50%; padding: 10px;" valign="middle">
+                        <td align="left" style="width:50%; padding: 10px;text-align:"left" valign="middle">
                       <![endif]-->
-                      <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
+                    <div class="two-col" style=" font-size:0;"> <!-- font size 0 so that column can sit side by side -->
+                 
+                      <div  class="column order-column-left" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
                         <div class="left-column" style="padding:10px; font-size:14px;line-height:18px;  ">
                           <h2 class="heading" style="margin: 0;
                           color: #1b1715;
@@ -583,11 +652,11 @@
                         ">USA</p>
                         </div>
                       </div>
-                      <!--[if mso]>
+                      <!--[if gte mso 9 || (IE)]>
                         </td>
-                        <td style="width:50%;padding: 10px;" valign="middle">
+                        <td align="right" style="width:50%;padding: 10px;" valign="middle">
                       <![endif]-->
-                      <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
+                      <div  class="column order-column-right" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle; ">
                         <div class="right-column" style="padding:10px; font-size:14px;line-height:18px; ">
                           <h2 style="margin: 0;
                           color: #1b1715;
@@ -636,7 +705,7 @@
                         ">USA</p>
                         </div>
                       </div>
-                      <!--[if mso]>
+                      <!--[if gte mso 9 || (IE)]>
                         </td>
                         </tr>
                         </table>
@@ -683,7 +752,7 @@
           
 
                     <!-- START OF YOUR  ITEMS TITLE -->
-                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="90%">
+                    <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="100%">
                       <tr>
                         <td align="center" style="padding-top: 10px">
                           <h2 style="
@@ -703,7 +772,10 @@
                     
                         
                  <!-- horizontal line break v3 -->  
-                    <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                          <tr>
+                            <td>
+                                         <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
                     <tr>
                       <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #000000; " height="1" > </td>
                     </tr>
@@ -711,6 +783,10 @@
                       <td style="line-height: 20px;font-size:20px;" height="20"> </td>
                     </tr> -->
                   </table>
+                            </td>
+                          </tr>
+                        </table>
+         
 		
 
                         
@@ -727,7 +803,7 @@
                       <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
                         <div style="padding:10px; font-size:14px;line-height:18px;text-align:left;">
                           <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:18px;">
-                            <img src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" width="310" alt="" style="display:block;width:310px;max-width:100%;height:auto; "/>
+                            <img class="shoe-img" src="https://i.ibb.co/VHwZ3Jy/resized-shoes-1.jpg" width="310" alt="" style="display:block;width:310px;max-width:100%;height:auto; "/>
                           </p>
                         </div>
                       </div>
@@ -798,14 +874,21 @@
 
                        
            						<!-- horizontal line break v3 -->  
-                    <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
+                              <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                          <tr>
+                            <td>
+                                         <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
                     <tr>
-                      <td class="line" style="line-height: 2px;font-size:4px;border-bottom: 1px solid #000000;"></td>
+                      <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #000000; " height="1" > </td>
                     </tr>
                       <!--<tr>
                       <td style="line-height: 20px;font-size:20px;" height="20"> </td>
                     </tr> -->
                   </table>
+                            </td>
+                          </tr>
+                        </table>
+         
 
                         
 
@@ -819,7 +902,7 @@
                       <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
                         <div style="padding:10px; font-size:14px;line-height:18px;text-align:left;">
                           <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:18px;">
-                            <img src="https://i.ibb.co/SccLJLx/resized-shoes-2.jpg.jpg" width="310" height="" alt="" style="display:block;width:310px;max-width:100%;height:auto; "/>
+                            <img class="shoe-img" src="https://i.ibb.co/SccLJLx/resized-shoes-2.jpg.jpg" width="310" alt="" style="display:block;width:310px;max-width:100%;height:auto; "/>
                           </p>
                         </div>
                       </div>
@@ -889,14 +972,21 @@
 
 
             				<!-- horizontal line break v3 -->  
-                    <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
+                              <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                          <tr>
+                            <td>
+                                         <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
                     <tr>
-                      <td class="line" style="line-height: 2px;font-size:4px;border-bottom: 1px solid #000000;"></td>
+                      <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #000000; " height="1" > </td>
                     </tr>
                       <!--<tr>
                       <td style="line-height: 20px;font-size:20px;" height="20"> </td>
                     </tr> -->
                   </table>
+                            </td>
+                          </tr>
+                        </table>
+         
 
 
                      <!-- Two Column Layout Product Item #3 -->
@@ -909,7 +999,7 @@
                       <div class="column" style="width: 100%; max-width: 330px; display:inline-block; vertical-align:middle;">
                         <div style="padding:10px; font-size:14px;line-height:18px;text-align:left;">
                           <p style="margin:0;font-family:Arial,sans-serif;font-size:14px;line-height:18px;">
-                            <img src="https://i.ibb.co/5TfbFc2/resized-shoes-3.jpg" width="310" alt="" style="display:block;width:310px;max-width:100%;height:auto; "/>
+                            <img class="shoe-img" src="https://i.ibb.co/5TfbFc2/resized-shoes-3.jpg" width="310" alt="" style="display:block;width:310px;max-width:100%;height:auto; "/>
                           </p>
                         </div>
                       </div>
@@ -981,14 +1071,21 @@
                         
                         
             				<!-- horizontal line break v3 -->  
-                    <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
+                              <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                          <tr>
+                            <td>
+                                         <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
                     <tr>
-                      <td class="line" style="line-height: 2px;font-size:4px;border-bottom: 1px solid #000000;"></td>
+                      <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #000000; " height="1" > </td>
                     </tr>
                       <!--<tr>
                       <td style="line-height: 20px;font-size:20px;" height="20"> </td>
                     </tr> -->
                   </table>
+                            </td>
+                          </tr>
+                        </table>
+         
 
 
                   <!-- Single Column Layout Item Calculation with multiple rows  -->
@@ -1035,15 +1132,21 @@
 
 
               				<!-- horizontal line break v3 -->  
-                    <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
+                                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" role="presentation">
+                          <tr>
+                            <td>
+                                         <table width="97%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;padding-top:8px;">
                     <tr>
-                      <td class="line" style="line-height: 2px;font-size:4px;border-bottom: 1px solid #000000;"></td>
+                      <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #000000; " height="1" > </td>
                     </tr>
                       <!--<tr>
                       <td style="line-height: 20px;font-size:20px;" height="20"> </td>
                     </tr> -->
                   </table>
-                    
+                            </td>
+                          </tr>
+                        </table>
+         
 
 
 
@@ -1073,15 +1176,70 @@
                   
           
            
-                    
-                  <!-- Single Column Button-->
-    <div align="center">
-                            <!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.example.com"style="height:60px;v-text-anchor:middle;width:580;" arcsize="3.3333333333333335%" stroke="f" fillcolor="#000000"><w:anchorlock/><center><![endif]--><a class="button-border" href="https://www.example.com" style="background-color:#000000;border-radius:2px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:20px;text-transform: uppercase;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:97%;-webkit-text-size-adjust:none;letter-spacing:1px;padding-left:2px; padding-right:2px;">Thank you for your order!</a><!--[if mso]></center></v:roundrect><![endif]--></div>
+      
 
-
+                  
+                    <!-- single column button shop for new arrivals -->
+     <!--              <table class="darkmode-background" bgcolor="#ffffff" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                    <tr>
+                      <td align="center"  style=" text-align: center; text-align: center;mso-padding-bottom-alt: 35px;" width="400" height="auto">
+                      
+                              <p class="btn-fontSize" style="align-items: center;">
+                                 [if mso]>
+                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" 
+                                href="http://www.https://visit.arima-onsen.com/"
+                                style="height:60px;v-text-anchor:middle;width:280px;mso-ansi-font-size:35px;" 
+                                arcsize="3%" 
+                                stroke="f" 
+                  
+                                fillcolor="#130909">
+                              <w:anchorlock/>
+                              <center>
+                            <![endif]
+                          <a class="darkmode-button keep-white-second" href=" #" target="_blank"
+                          style="font-size: 20px;mso-ansi-font-size:20px; text-transform: uppercase; mso-style-textfill-fill-color:#ffffff;border-radius: 2px; border: 1px solid transparent; color: #ffffff; background-color: #000000;padding: 20px 35px; text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;">Thank you for your order!
+                          </a>
+                            [if mso]>
+                              </center>
+                            </v:roundrect>
+                            <![endif]
+                        </p>
+                      
+                        
+                      </td>
+                    </tr>
+                    </table>
+                         -->
+                        
+                        
+                    						<div align="center" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="text-align:center;">
+                          <!--[if mso]>
+                            <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" 
+                              href="https://www.example.com"
+                              style="height:50px;v-text-anchor:middle;width:350px;font-size:14px;mso-style-textfill-fill-color:#ffffff" 
+                              arcsize="8%" 
+                              stroke="f" 
+                              fillcolor="#333">
+                            <w:anchorlock/>
+                            <center>
+                          <![endif]-->
+                          <a class="darkmode-button"  width="80%" href="https://www.example.com" style="text-align:center;mso-style-textfill-fill-color:#ffffff;background-color:#000000;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:15px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;-webkit-text-size-adjust:none;font-size: 20px;font-family: Raleway, sans-serif; font-weight: bold;padding: 10px 35px; text-decoration: none;  letter-spacing: 1px; text-transform:uppercase;">Thank you for your order!
+                          </a>
+                          <!--[if mso]>
+                          </center>
+                        </v:roundrect>
+                        <![endif]-->
+                      </div>   
 
        
-                     
+                          <!-- white space break -->
+                   <!--[if mso]>
+												<i style="letter-spacing:50px;mso-font-width:-100%;display:inline-block;width:50px">&#8202;
+ 											<![endif]-->
+                  <div class="spacer" style="line-height:2px;height:20px;mso-line-height-rule:exactly;">&nbsp;</div>
+                  <!--[if mso]>
+												</i>
+ 											<![endif]-->
 
                   <!-- Single Column email sent message -->
                   <table role="presentation" style="border:0; border-spacing:0;width: 100%;">
@@ -1144,28 +1302,28 @@
                             <td style="padding-right: 14px;">
                           <![endif]-->
                             <a href="http://www.instagram.com" style="text-decoration: none;margin-right: 5px;">
-                              <img src="https://i.ibb.co/X7KP5Np/icons8-instagram-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
+                              <img src="https://i.ibb.co/X7KP5Np/icons8-instagram-48.png" alt="instagram logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
                            <!--[if mso]>
                             </td>
                             <td style="padding-right: 14px;">
                             <![endif]-->
                             <a href="http://www.linkedin.com" style="text-decoration: none;margin-right: 5px;">
-                              <img src="https://i.ibb.co/KxjFY8p/icons8-linkedin-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
+                              <img src="https://i.ibb.co/KxjFY8p/icons8-linkedin-48.png" alt="linkedin logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
                            <!--[if mso]>
                               </td>
                               <td style="padding-right: 14px;">
                           <![endif]-->
                             <a href="http://www.twitter.com" style="text-decoration: none;margin-right: 5px;">
-                              <img src="https://i.ibb.co/hBgQBWj/icons8-twitter-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
+                              <img src="https://i.ibb.co/VmNw8sB/icons8-twitterx-50-1.png" alt="twitter logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
                           <!--[if mso]>
                               </td>						
                             	<td style="padding-right: 14px;">
                 					<![endif]-->
                             <a href="http://www.youtube.com" style="text-decoration: none;margin-right: 5px;">
-                              <img src="https://i.ibb.co/c2ccqNR/icons8-youtube-48.png" alt="facebook logo" width="25" height="25" style="display: inline-block; border: none;">
+                              <img src="https://i.ibb.co/c2ccqNR/icons8-youtube-48.png" alt="youtube logo" width="25" height="25" style="display: inline-block; border: none;">
                             </a>
                             <!--[if mso]>
                               </td>
